@@ -3,7 +3,7 @@
   this is default which is set at smaller mobile screen first */
 
 header {
-        background-image: url("../images/logosmall.png");
+        background-image: url("images/LogoSmall.png");
         background-position: right;
         background-repeat: no-repeat;
         min-height: 50px;
@@ -178,7 +178,7 @@ this media screen would only apply to anything great than 480px*/
     header {
             background-color:#482216; 
             color: #4d4b30;
-            background-image: url("../images/LogoLarge.png");
+            background-image: url("images/LogoLarge.png");
             background-position: right;
             background-repeat: no-repeat;
             min-height: 100px;
