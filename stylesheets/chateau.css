@@ -1,0 +1,325 @@
+/*this is default which is set at smaller mobile screen first 
+  this is default which is set at smaller mobile screen first
+  this is default which is set at smaller mobile screen first */
+
+header {
+        background-image: url("../images/logosmall.png");
+        background-position: right;
+        background-repeat: no-repeat;
+        min-height: 50px;
+}
+    
+body {  
+        background-color:#4d4b30;
+        color:#482216 ;
+        font-family: Arial, Helvetica, sans-serif;
+}
+
+main  {     
+        background-color:#A8693F; 
+        color: #2E3842;
+        height: auto;
+}
+
+img { 
+        width: 100%;
+        height: auto;
+}
+
+    /* all the list first line would set in bold*/
+dt { 
+        font-weight: bold;
+}
+
+aside {
+        background-color:#4F4F4F;
+        padding: 2%;
+        border-radius: 25px;
+}
+
+figcaption {
+        text-align: center;
+        font-weight: bold;
+}
+
+.circleborder {
+        border-radius: 50%;
+        width: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+}
+        
+.largeitalics { font-style: italic;
+            font-size: 1.2em;}
+
+h2 {text-align: center;}
+
+h3 {text-align: center;}
+
+#headerh1 {
+        font-family:'Brush Script MT', cursive;
+        font-size: 4em;
+}
+
+.listborder {
+                border-style: solid;
+                border-color: navy;
+}
+
+.listbackground {
+        color: navy;
+        background-color:bisque;
+}
+
+/* NAV RELATED CODE HERE*/
+
+nav li {    display: inline;
+            padding: 5px;}
+
+nav {font-size: 1.5em;}
+
+nav a { font-weight: bold;
+        text-decoration: none;
+        width: 2%;
+        margin: 2px;
+        text-align: center;
+        background-color: darkolivegreen;
+        flex-direction: row;
+}
+
+/*static nav code*/
+
+/* for NAV where link is not visited*/
+nav a:link {color:navy;}
+    
+/* for NAV where link is visited*/
+nav a:visited {color: black;}
+    
+/* for NAV mouse hover link */
+nav a:hover {color: red;}
+
+/*static nav code with flex*/
+.staticnavsmall {display: flex;}
+
+nav { box-sizing: border-box;}
+/*static nav code with flex ends*/
+
+footer {text-align:center;
+}
+    
+.centerlist { 
+        text-align: center;
+}
+      
+.centerlisttext {
+        display: inline-block;
+        text-align: left;
+}
+
+/*gridcontain to help orient the graduates page SMALL SCREEN*/
+
+.gridcontainer {
+        display: grid;
+        grid-gap:10px;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 50px auto;
+        grid-template-areas:
+                "one    one"
+                "two    three"
+                "two    three"
+                "four   five"
+                "six    six";
+        justify-content: space-evenly;
+}
+
+.textmain1 {
+        grid-area: one;
+}
+
+.pic1long {
+        grid-area:two;
+}
+
+.pic1wide {
+        grid-area: six;
+}
+
+.picmain1 {
+        grid-area: four;
+}
+
+.picmain2 {
+        order:five;
+}
+
+.asidepic {
+        grid-area: three;
+}
+
+.gridpic { 
+width: 75%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+.gridpic2 {
+height: 100%;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+/*this media screen would only apply to anything great than 480px
+this media screen would only apply to anything great than 480px
+this media screen would only apply to anything great than 480px*/
+@media screen and (min-width: 480px) {
+    header {
+            background-color:#482216; 
+            color: #4d4b30;
+            background-image: url("../images/LogoLarge.png");
+            background-position: right;
+            background-repeat: no-repeat;
+            min-height: 100px;
+}
+
+/*static nav code with flex*/
+.staticnavbig {display: flex;}
+
+nav { 
+        height: 100vh;
+        box-sizing: border-box;
+}
+
+/*static nav code with flex ends*/          
+nav li {
+        display: block;
+}
+
+nav a { 
+        text-decoration: none;
+        margin: 1px;
+        width: auto;
+        background-color: darkolivegreen;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+}
+
+body {  
+        background-color:#3F3D27;
+        color: #C7C7C7;
+        font-family: 'Times New Roman', Times, serif;
+}
+
+aside { padding: 5%;}
+
+dl {margin: 5px;}
+
+/*main body flex can scroll*/
+main  { 
+        background-color: #773A22; 
+        color: #BDCFD1;
+            height:fit-content
+}
+        
+.mainscroll { 
+            height: 100vh;
+            overflow:hidden;
+}
+
+/*main body flex can scroll ends*/
+.circleborder { 
+                border-radius:  50%;
+                width: 150px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+}
+    
+/* 2 uneven column with nav on left and aside to the right */
+.lcolumn {  
+            float: left;
+            padding: 10px;
+            width: 15%;
+}
+
+.lcolumnclear {
+                padding: 10px;
+                width: 20%;
+                clear: left;
+}
+    
+.rcolumn {  
+            float: right;
+            padding: 10px;
+            width: 80%;
+}
+
+.rcolumnclear { 
+                padding: 10px;
+                width: 80%;
+                clear: right;
+}
+
+/* will need a float clear so that the right is even */
+.clear {  
+        clear:both;
+}
+
+/*flex items go here*/
+.gallerycontainer { 
+                    display: flex; 
+                    flex-wrap: wrap;
+                    justify-content: space-evenly;
+}
+
+/*gridcontain to help orient the graduates page*/
+.gridcontainer {
+                display: grid;
+                /*how did this work? ask prof*/
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 50px auto;
+                gap: 10px;
+                justify-content: space-evenly;
+        }
+.pic1long {
+            grid-column: 1;
+            grid-row: 2;
+            grid-row-end: span 3;
+}
+.pic1wide {
+            grid-column: 2 / span 2;
+            grid-row: 2;
+}
+.picmain1 {
+            grid-column: 2;
+            grid-row: 3;
+}
+.picmain2 {
+            grid-column: 3;
+            grid-row: 3;
+}
+.asidepic {
+            grid-column: 4;
+            grid-row: 1;
+            grid-row-end: span 3;
+}
+.textmain1 {
+            grid-column-end: span 3;
+            grid-row: 1;
+}
+.gridpic { 
+    width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.gridpic2 {
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+}    
